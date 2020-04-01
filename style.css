@@ -1,4 +1,93 @@
 body{
     margin: 0px;
     padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Nav-Bar-Tabs */
+nav{
+    padding-bottom: 40px;
+}
+.nav-bar ul{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding-right: 30px;
+}
+.nav-bar li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar li button{
+    border: none;
+    background: none;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar  span button{
+    background-image: linear-gradient(to bottom, #1FBBFF, #B20BE7, #8123A1);
+}
+.nav-bar li span button a{
+    color: white;
+}
+.nav-bar  span button:active{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.nav-bar li button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-bar li button:active{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.active{
+    color: blue !important;
+}
+
+/* Nav-bar-LOGO */
+
+.logo-img{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+/* Header */
+
+
+.bg-img{
+    background-image: url(./res/header-bg.jpg);
+    background-repeat: no-repeat;
+    height: 810px;
+    width: 1280px;
+    margin-top: 30px;
+}
+.cont-header-text{
+    position: relative;
+    top: 150px;
+    margin-left: 200px;
+}
+header h1{
+    font-size: 40px;
+}
+header .enroll-btn{
+    background: rgb(2, 179, 170);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    transition: .2s ease-in-out;
+}
+header .enroll-btn a{
+    color: white;
+    text-decoration: none;
+}
+header .enroll-btn:active{
+    background-color: rgb(10, 126, 120);
 }
