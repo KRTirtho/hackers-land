@@ -1,0 +1,22 @@
+{
+  "name": "wed-development-journey-code-upload",
+  "version": "1.0.0",
+  "description": "Okay as my first server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KRTirtho/Wed-Development-Journey-Code-Upload.git"
+  },
+  "keywords": [
+    "applegotkilled"
+  ],
+  "author": "KRTirtho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KRTirtho/Wed-Development-Journey-Code-Upload/issues"
+  },
+  "homepage": "https://github.com/KRTirtho/Wed-Development-Journey-Code-Upload#readme"
+}

@@ -3,10 +3,12 @@ body{
     padding: 0px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 /* Nav-Bar-Tabs */
 nav{
     padding-bottom: 40px;
+    background-color: black;
 }
 .nav-bar ul{
     position: absolute;
@@ -27,7 +29,7 @@ nav{
 }
 .nav-bar li a{
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: uppercase;
     padding: 0px;
     margin: 0px;
@@ -39,13 +41,13 @@ nav{
     color: white;
 }
 .nav-bar  span button:active{
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.6) !important;
 }
 .nav-bar li button:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .nav-bar li button:active{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 .active{
     color: blue !important;
@@ -66,8 +68,7 @@ nav{
     background-image: url(./res/header-bg.jpg);
     background-repeat: no-repeat;
     height: 810px;
-    width: 1280px;
-    margin-top: 30px;
+    width: 100%;
 }
 .cont-header-text{
     position: relative;
@@ -90,4 +91,18 @@ header .enroll-btn a{
 }
 header .enroll-btn:active{
     background-color: rgb(10, 126, 120);
+}
+/* Main Content */
+main section {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+main section h3{
+    text-align: center;
+    color: rgb(10, 126, 120);
+    border-bottom: 2px solid rgb(10, 126, 120);
+    font-weight: bolder;
+}
+};
 }
