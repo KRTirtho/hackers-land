@@ -1,8 +1,13 @@
-const http = require('http');
-http.createServer((request, response) => {
-  response.writeHead(200);
-  response.end('Hello, World!');
-}).listen(3000);
-console.log('Server running on http://localhost:3000');
+let logInBtn = document.getElementById("logInBtn");
+let closeBtn = document.getElementById("closeBtn");
+let form = document.getElementById("logForm");
 
-console.log("I'm fine");
+function open(){
+    form.style.top = "50%";
+}
+function close(){
+  form.style.top = "-30%";
+}
+
+logInBtn.addEventListener("click", open);
+closeBtn.addEventListener("click", close);

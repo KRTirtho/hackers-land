@@ -5,6 +5,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
+*:focus{
+    outline: 0;
+}
 /* Nav-Bar-Tabs */
 nav{
     padding-bottom: 40px;
@@ -34,13 +37,11 @@ nav{
     padding: 0px;
     margin: 0px;
 }
-.nav-bar  span button{
-    background-image: linear-gradient(to bottom, #1FBBFF, #B20BE7, #8123A1);
-}
-.nav-bar li span button a{
+.nav-bar #logInBtn{
+    background-image: linear-gradient(to bottom, #1FBBFF, #B20BE7, #8123A1) !important;
     color: white;
 }
-.nav-bar  span button:active{
+.nav-bar  button:active{
     background-color: rgba(255, 255, 255, 0.6) !important;
 }
 .nav-bar li button:hover{
@@ -72,7 +73,7 @@ nav{
 }
 .cont-header-text{
     position: relative;
-    top: 150px;
+    top: 280px;
     margin-left: 200px;
 }
 header h1{
@@ -93,16 +94,113 @@ header .enroll-btn:active{
     background-color: rgb(10, 126, 120);
 }
 /* Main Content */
-main section {
+main{
+    margin-top:  50px;
+}
+main{
     width: 50%;
-    position: absolute;
+    position: relative;
     left: 25%;
 }
-main section h3{
+main section h1{
     text-align: center;
     color: rgb(10, 126, 120);
-    border-bottom: 2px solid rgb(10, 126, 120);
+    border-bottom: 2.5px solid rgb(10, 126, 120);
     font-weight: bolder;
+    font-size: 2em;
 }
-};
+/* Footer Section */
+footer{
+    max-width: 50%;
+    margin-top: 150px;
+    position: relative;
+    left: 30%;
+}
+.social{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+.social ul li{
+    list-style: none;
+    display: inline-block;
+}
+.social ul li a{
+    color: white;
+    font-size: 30px;
+    transition: 0.02s ease-in-out;
+}
+.social ul li a:active{
+    font-size: 28px;
+}
+/* Login Form */
+
+.form-cont{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+    min-width: 300px;
+    background-color: rgb(48, 48, 48);
+    padding: 10px 0px;
+    border-radius: 5px;
+    z-index: 9;
+    transition: 0.2s ease;
+}
+.login {
+    margin-top: 25px !important;
+    border: none;
+    background-color: rgb(2, 179, 170);
+    color: white;
+    transition: 0.2s ease-in-out !important;
+    border-radius: 5px;
+}
+.login:active{
+    background-color: rgb(10, 126, 120);
+}
+.form-cont form input{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+}
+.form-cont form input:not(.login){
+    background-color: rgb(48, 48, 48);
+    border-bottom: rgb(2, 179, 170) 1.4px solid;
+}
+input:focus::placeholder{
+    font-size: 11px;
+    color: rgb(218, 218, 218);
+    
+}
+input::placeholder{
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.form-cont button{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: none;
+    border: rgb(2, 179, 170) 1px solid;
+    cursor: pointer;
+    color: rgb(2, 179, 170);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out !important;
+}
+.form-cont button:active{
+    color: rgb(10, 126, 120);
+    border: rgb(10, 126, 120) 1px solid;
+}
+.active{
+    display: none;
 }
