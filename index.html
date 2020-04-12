@@ -118,7 +118,7 @@
     </footer>
     
     <!-- Login Section -->
-
+  <div id="bgForm" class="bg-cont">
     <div id="logForm" class="form-cont">
         <button id="closeBtn">&Cross;</button>
         <h1>Login</h1>
@@ -126,9 +126,28 @@
             <input type="email" placeholder="Email">
             <input type="password" name="" id="" placeholder="Password (min 8 chars)">
             <input type="submit" class="login" value="Login">
+            <div>
+                <p>Don't have an account? <button id="createAcc" type="button" class="create-acc">Create Now</button></p>
+            </div>
         </form>
     </div>
+  </div>
 
+ <!--Sign-Up Section  -->
+
+  <div id="bgForm" class="bg-cont-sign">
+    <div id="signForm" class="sign-up form-cont">
+        <button id="closeBtnSignUp">&Cross;</button>
+        <h1>SignUp</h1>
+        <form action="">
+            <input type="email" placeholder="Email">
+            <input type="password" name="" id="" placeholder="Password (min 8 chars)">
+            <input type="password" name="" id="" placeholder="Confirm Password">
+            <input type="submit" class="login" value="SignUp">
+            <p>Already an member? <button id="logIn" type="button" class="signLog">Log In</button></p>
+        </form>
+    </div>
+  </div>
     <script src="app.js"></script>
 </body>
 </html>
