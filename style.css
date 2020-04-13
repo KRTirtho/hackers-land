@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0px;
     padding: 0px;
@@ -239,3 +240,255 @@ input::placeholder{
     padding: 0 !important;
     margin: 0 !important;
     float: none !important;
+=======
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    position: absolute;
+}
+*:focus{
+    outline: 0;
+}
+/* Nav-Bar-Tabs */
+nav{
+    padding-bottom: 40px;
+    background-color: black;
+}
+.nav-bar ul{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    padding-right: 30px;
+}
+.nav-bar li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar li button{
+    border: none;
+    background: none;
+    height: 30px;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+.nav-bar li #logInBtn{
+    background-image: linear-gradient(to bottom, #1FBBFF, #B20BE7, #8123A1) !important;
+    color: white;
+    transition: 0.2s ease-in-out !important;
+}
+.nav-bar #logInBtn:hover{
+    background-image: linear-gradient(to bottom, rgb(93, 203, 250), rgb(191, 72, 228), rgb(128, 52, 153)) !important;
+}
+.nav-bar #logInBtn:active{
+    background-image: linear-gradient(to bottom, rgb(118, 208, 247), rgb(200, 101, 230), rgb(125, 67, 145)) !important;
+}
+.nav-bar  button:active{
+    background-color: rgba(255, 255, 255, 0.6) !important;
+}
+.nav-bar li button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.nav-bar li button:active{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Nav-bar-LOGO */
+
+.logo-img{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+/* Header */
+
+
+.bg-img{
+    background-image: url(./res/header-bg.jpg);
+    background-repeat: no-repeat;
+    height: 810px;
+    width: 100%;
+}
+.cont-header-text{
+    position: relative;
+    top: 280px;
+    margin-left: 200px;
+}
+header h1{
+    font-size: 40px;
+}
+header .enroll-btn{
+    background: rgb(2, 179, 170);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    transition: .2s ease-in-out;
+}
+header .enroll-btn a{
+    color: white;
+    text-decoration: none;
+}
+header .enroll-btn:active{
+    background-color: rgb(10, 126, 120);
+}
+/* Main Content */
+main{
+    margin-top:  50px;
+}
+main{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+main section h1{
+    text-align: center;
+    color: rgb(10, 126, 120);
+    border-bottom: 2.5px solid rgb(10, 126, 120);
+    font-weight: bolder;
+    font-size: 2em;
+}
+/* Footer Section */
+footer{
+    max-width: 50%;
+    margin-top: 150px;
+    position: relative;
+    left: 30%;
+}
+.social{
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+.social ul li{
+    list-style: none;
+    display: inline-block;
+}
+.social ul li a{
+    color: white;
+    font-size: 30px;
+    transition: 0.02s ease-in-out;
+}
+.social ul li a:active{
+    font-size: 28px;
+}
+/* Login Form */
+
+.form-cont{
+    display: block;
+    position: fixed;
+<<<<<<< HEAD
+    top:  -50%;
+=======
+    top: -50%;
+>>>>>>> 6fdf84d19a43994a5c22f0c28b708aaddf4af230
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 30%;
+    min-width: 300px;
+    background-color: rgb(48, 48, 48);
+    padding: 10px 0px;
+    border-radius: 5px;
+    z-index: 9;
+    transition: 0.2s ease;
+}
+.login {
+    margin-top: 25px !important;
+    border: none;
+    background-color: rgb(2, 179, 170);
+    color: white;
+    transition: 0.2s ease-in-out !important;
+    border-radius: 5px;
+}
+.login:active{
+    background-color: rgb(10, 126, 120);
+}
+.form-cont form input{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    color: white;
+}
+.form-cont form input:not(.login){
+    background-color: rgb(48, 48, 48);
+    border-bottom: rgb(2, 179, 170) 1.4px solid;
+}
+input:focus::placeholder{
+    font-size: 11px;
+    color: rgb(218, 218, 218);
+    
+}
+input::placeholder{
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.form-cont button{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: none;
+    border: rgb(2, 179, 170) 1px solid;
+    cursor: pointer;
+    color: rgb(2, 179, 170);
+    border-radius: 5px;
+    transition: 0.2s ease-in-out !important;
+}
+.form-cont button:active{
+    color: rgb(10, 126, 120);
+    border: rgb(10, 126, 120) 1px solid;
+}
+<<<<<<< HEAD
+.form-cont div p button{
+    border: none;
+    font-size: 15px !important;
+    padding: 0;
+    margin: 0;
+    float: none;
+}
+.form-cont div p button:active{
+    border: none !important;
+}
+.bg-cont{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    height: 100vh;
+    transition: 0.2s ease-in-out;
+}
+/* SignUp Sections */
+.sign-up{
+    top: -50%;
+    padding-bottom: 10px !important;
+}
+.sign-up h1{
+    margin-left: 35px;
+}
+.signLog{
+    border: none !important;
+    font-size: 15px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    float: none !important;
+=======
+.active{
+    display: none;
+>>>>>>> 6fdf84d19a43994a5c22f0c28b708aaddf4af230
+}
+>>>>>>> origin
