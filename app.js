@@ -9,13 +9,13 @@ let signLogBtn = document.getElementById("logIn");   //LogIn buttton in SignUp F
 let createAccBtn = document.getElementById("createAcc"); //Create Acc btn in LogIn Form
 let signUpCloseBtn = document.getElementById("closeBtnSignUp"); //SignUp Close Btn
 let bodyHide = document.body; //body Element for Scrolling Issue 
-
 //Logic Stands Here
 function hideScrollBar(){
-  bodyHide.style.position = "fixed"; //Hides Scroll Bar 
+  bodyHide.style.position = "fixed";  //Hides Scroll Bar 
 }
 function unhideScrollBar(){
-  bodyHide.style.position = "absolute"; //UnHides Scroll Bar
+  bodyHide.style.position = "absolute";
+  inputRemover();     //UnHides Scroll Bar
 }
 function openFormBG(){
   bgForm.style.top = "0%";
@@ -32,7 +32,6 @@ function openLogIn(){
 function closeLogIn(){
   logForm.style.top = "-150%";      //Closes  The LogIn Form & formBG
   closeFormBG();
-  unhideScrollBar();
 }
 function closeLogInOnCreateAcc(){
   logForm.style.top = "-150%"; 
@@ -52,7 +51,6 @@ function closeCreateAcc(){
   signForm.style.top = "-150%";  //Closes Create Acc Form After clicking Cross Button
   closeFormBG();
 }
-
 //Events Starts Here
 
 logInBtn.addEventListener("click", openLogIn);  //Opens LogIn Form after clicking Nav LogIn Btn

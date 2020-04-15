@@ -1,0 +1,310 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  position: absolute;
+}
+
+*:focus {
+  outline: 0;
+}
+
+nav {
+  padding-bottom: 40px;
+  background-color: black;
+}
+
+nav img {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+nav ul {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li button {
+  border: none;
+  background: none;
+  height: 30px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+nav ul li button:active {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+}
+
+nav ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+nav ul li button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li #logInBtn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1FBBFF), color-stop(#B20BE7), to(#8123A1)) !important;
+  background-image: linear-gradient(to bottom, #1FBBFF, #B20BE7, #8123A1) !important;
+  color: white;
+  -webkit-transition: 0.2s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+nav ul li #logInBtn:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5dcbfa), color-stop(#bf48e4), to(#803499)) !important;
+  background-image: linear-gradient(to bottom, #5dcbfa, #bf48e4, #803499) !important;
+}
+
+nav ul li #logInBtn:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#76d0f7), color-stop(#c865e6), to(#7d4391)) !important;
+  background-image: linear-gradient(to bottom, #76d0f7, #c865e6, #7d4391) !important;
+}
+
+header .bg-img {
+  background-image: url(./res/header-bg.jpg);
+  background-repeat: no-repeat;
+  height: 810px;
+  width: 100%;
+}
+
+header .bg-img div {
+  position: relative;
+  top: 280px;
+  margin-left: 200px;
+}
+
+header .bg-img div h1 {
+  font-size: 40px;
+}
+
+header .bg-img div button {
+  background: #02b3aa;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+header .bg-img div button a {
+  color: white;
+  text-decoration: none;
+}
+
+header .bg-img div button a:active {
+  background-color: #0a7e78;
+}
+
+main {
+  margin-top: 50px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+main h1 {
+  text-align: center;
+  color: #0a7e78;
+  border-bottom: 2.5px solid #0a7e78;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+footer {
+  max-width: 50%;
+  margin-top: 150px;
+  position: relative;
+  left: 30%;
+}
+
+footer div {
+  width: 50%;
+  position: relative;
+  left: 25%;
+}
+
+footer div li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer div li a {
+  color: white;
+  font-size: 30px;
+  -webkit-transition: 0.02s ease-in-out;
+  transition: 0.02s ease-in-out;
+}
+
+footer div li a:active {
+  font-size: 28px;
+}
+
+.bg-cont {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  top: -100%;
+  height: 100vh;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.form-cont {
+  display: block;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 30%;
+  min-width: 300px;
+  background-color: #303030;
+  padding: 10px 0px;
+  border-radius: 5px;
+  z-index: 9;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.form-cont form .login {
+  margin-top: 25px !important;
+  border: none;
+  background-color: #02b3aa;
+  color: white;
+  -webkit-transition: 0.2s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
+  border-radius: 5px;
+}
+
+.form-cont form .login:active {
+  background-color: #0a7e78;
+}
+
+.form-cont button {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  background: none;
+  border: #02b3aa 1px solid;
+  cursor: pointer;
+  color: #02b3aa;
+  border-radius: 5px;
+  -webkit-transition: 0.2s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.form-cont button:active {
+  color: #0a7e78;
+  border: #0a7e78 1px solid;
+}
+
+.form-cont p button {
+  border: none;
+  font-size: 15px !important;
+  padding: 0;
+  margin: 0;
+  float: none;
+}
+
+.form-cont p button:active {
+  border: none !important;
+}
+
+.form-cont input {
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px;
+  margin: 10px 0px;
+  border: none;
+  color: white;
+}
+
+.form-cont input:not(.login) {
+  background-color: #303030;
+  border-bottom: #02b3aa 1.4px solid;
+}
+
+.form-cont input::-webkit-input-placeholder {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.form-cont input:-ms-input-placeholder {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.form-cont input::-ms-input-placeholder {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.form-cont input::placeholder {
+  color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.form-cont input:focus::-webkit-input-placeholder {
+  font-size: 11px;
+  color: #dadada;
+}
+
+.form-cont input:focus:-ms-input-placeholder {
+  font-size: 11px;
+  color: #dadada;
+}
+
+.form-cont input:focus::-ms-input-placeholder {
+  font-size: 11px;
+  color: #dadada;
+}
+
+.form-cont input:focus::placeholder {
+  font-size: 11px;
+  color: #dadada;
+}
+
+.sign-up {
+  top: -50%;
+  padding-bottom: 10px !important;
+}
+
+.sign-up h1 {
+  margin-left: 35px;
+}
+
+.sign-up .signLog {
+  border: none !important;
+  font-size: 15px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  float: none !important;
+}
+/*# sourceMappingURL=style.css.map */
